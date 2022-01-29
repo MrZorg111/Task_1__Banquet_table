@@ -47,10 +47,28 @@ int main() {
 for ( int i = 0; i < 12; i++) {
     std::cout << i << " - ";
     for (int j = 0; j < 4 ; j++) {
-
-        std::cout << tableware[i][j] << " " << plates[i][j] << " " << chair[i][j] << " ";
+        std::cout << tableware[i][j] << " ";
+    }
+    if ( i > 1) {
+        std::cout << "\t\t\t";
+    }
+    else {
+        std::cout << "\t";
+    }
+    for (int k = 0; k < 3; k++) {
+        std::cout << plates[i][k] << " ";
+    }
+    if ( i > 1) {
+        std::cout << "\t\t";
+    }
+    else {
+        std::cout << "\t";
+    }
+    for (int y = 0; y < 1; y++) {
+        std::cout << chair[i][y] << " ";
     }
     std::cout << std::endl;
 }
 
 }
+// << plates[i][j] << " " << chair[i][j] << " ";
